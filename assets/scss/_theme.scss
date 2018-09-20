@@ -1,0 +1,330 @@
+body {
+  color: $black;
+  line-height: 1.7em;
+}
+hr.separator {
+  border-top: 3px solid $template-color;
+  width: 8%;
+}
+hr.separator.separator-white {
+  border-top: 1px solid $white;
+  opacity: .5;
+  width: 70%;
+}
+.btn {
+  font-family: 'Arca Majora Heavy', sans-serif;
+  border-width: 2px;
+  &.btn-prime {
+    @include transition(0.3);
+    background-color: $template-color;
+    color: $white;
+    &:hover {
+      background-color: $template-color-dark;
+    }
+  }
+}
+// -------------------- bootstrap reset theme --------------------//
+label {
+  &#name-error,&#email-error,&#message-error {
+    font-weight: bold;
+  }
+  &#message-error {
+    display: block;
+    text-align: justify;
+  }
+}
+.navbar-dark .navbar-toggler {
+  &:focus {
+    border: 1px solid $template-color !important;
+  }
+}
+// -------------------- owl reset theme --------------------//
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: $template-color;
+  &:focus {
+    outline: none;
+  }
+}
+.owl-theme .owl-dots .owl-dot:focus {
+  outline: none;
+}
+// --------------------
+#hero {
+  @include bg-img-center-cover();
+  background-attachment: fixed;
+  background-image: url('../img/background.jpg');
+  .navbar {
+    @include transition(0.5);
+    border-bottom: 1px solid #fff6;
+    &.fixed-top {
+      background-color: $flat-black;
+    }
+    .navbar-brand {
+      color: $white;
+      font-family: 'Arca Majora Heavy', sans-serif;
+    }
+    .nav-item {
+      .nav-link {
+        @include transition(0.3);
+        color: $white;
+        font-family: 'Arca Majora Bold', sans-serif;
+        font-size: .9em;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        &:hover {
+          color: $template-color;
+        }
+        &.active {
+          color: $template-color-light;
+        }
+      }
+    }
+  }
+  .subtitle-first-section{
+    @include transition(0.5);
+    color: $white;
+    text-align: center;
+    h1 {
+      font-family: 'Arca Majora Bold', sans-serif;
+      font-size: 5em;
+      letter-spacing: .05em;
+      line-height: 1.2em;
+    }
+    h3 {
+      font-size: 1.5em;
+      margin: 1.5em;
+    }
+    .btn-outline-light {
+      margin-top: 10px;
+    }
+  }
+}
+#about,#services,#attributes,#gallery,#team,#reviews,#contact,#message {
+  &>.title {
+    text-align: center;
+    p {
+      font-family: 'Arca Majora Heavy', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-family: 'Arca Majora Bold', sans-serif;
+      font-weight: lighter;
+      span {
+        font-family: 'Arca Majora Heavy', sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+}
+#about {
+  text-align: center;
+  &>section {
+    font-family: 'Arca Majora Heavy', sans-serif;
+    span:first-child {
+      font-size: 2.5em;
+    }
+  }
+}
+#services,#gallery,#message {
+  background-color: $light-gray;
+}
+#services {
+  .icon-img {
+    &>div {
+      figure {
+        &>img {
+          @include radius(50%);
+        }
+        figcaption {
+          text-align: center;
+        }
+      }
+      .title-desc {
+        font-family: 'Arca Majora Heavy', sans-serif;
+        text-align: center;
+        h5 {
+          text-transform: uppercase;
+        }
+        p {
+          font-family: 'Lato', sans-serif;
+          color: $gray;
+        }
+      }
+    }
+  }
+}
+#attributes {
+  background-color: $template-color;
+  color: $white;
+  .d-flex {
+    i {
+      font-size: 4.5em;
+    }
+    section {
+      h5 {
+        font-family: 'Arca Majora Heavy', sans-serif;
+        font-size: 1.2em;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+#gallery {
+  ul.list-inline {
+    font-family: 'Arca Majora Heavy', sans-serif;
+    text-align: center;
+    li {
+      @include transition(0.3);
+      color: $black;
+      cursor: pointer;
+      &.active {
+        color: $template-color;
+      }
+    }
+  }
+  figure {
+    img {
+      @include bg-img-center-cover();
+    }
+    a {
+      figcaption {
+        @include transition(0.3);
+        background-color: $black;
+        color: $white;
+        font-family: 'Arca Majora Bold', sans-serif;
+        opacity: 0;
+        text-transform: uppercase;
+      }
+      &:hover {
+        figcaption {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+#team {
+  .row {
+    figure {
+      img {
+        @include bg-img-center-cover();
+      }
+    }
+    h5 {
+      font-family: 'Arca Majora Heavy', sans-serif;
+      font-size: 1.2em;
+      text-transform: uppercase;
+    }
+    span {
+      font-family: 'Arca Majora Bold', sans-serif;
+    }
+    span, p {
+      color: $gray;
+    }
+  }
+}
+#reviews {
+  @include bg-img-center-cover();
+  background-image: url('../img/background1.jpg');
+  color: $white;
+  .overlay {
+    background-color: $black;
+    opacity: .7;
+  }
+  section {
+    h5 {
+      font-size: 1.2em;
+      text-transform: uppercase;
+    }
+  }
+}
+#contact {
+  background-color: $flat-black;
+  color: $white;
+  text-align: center;
+}
+#message {
+  text-align: center;
+  input,textarea {
+    @include transition(0.3);
+    border: 0;
+    border-bottom: 2px solid $gray;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    &:focus,&:valid,&:invalid {
+      outline: none;
+    }
+    &:focus {
+      border-bottom: 2px solid $template-color;
+    }
+  }
+}
+#partner {
+  figure {
+    img {
+      @include bg-img-center-contain;
+      @include transition(0.3);
+      filter: grayscale(100%);
+      opacity: 0.4;
+    }
+    &:hover {
+      img {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    }
+  }
+}
+footer {
+  background-color: $flat-black;
+  color: $white;
+  text-align: center;
+  section > div {
+    i,span {
+      opacity: .8;
+    }
+    i {
+      font-size: 4em;
+    }
+    h5 {
+      font-family: 'Arca Majora Heavy', sans-serif;
+      font-size: 1.1em;
+    }
+  }
+  .social-media {
+    a {
+      font-size: 1.3em;
+      i {
+        @include transition(0.3);
+        color: $white;
+        opacity: .8;
+      }
+      &:hover {
+        i {
+          opacity: 1;
+        }
+        i.fa-facebook-f {
+          color: #3b5998;
+        }
+        i.fa-twitter {
+          color: #1da1f2;
+        }
+        i.fa-instagram {
+          color: #c32aa3;
+        }
+        i.fa-google-plus-g {
+          color: #db4437;
+        }
+        i.fa-behance {
+          color: #0056ff;
+        }
+        i.fa-dribbble {
+          color: #ea4c89;
+        }
+      }
+    }
+  }
+}

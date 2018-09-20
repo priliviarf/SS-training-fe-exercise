@@ -1,0 +1,27 @@
+{
+  "name": "ss-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/priliviarf/ss-training.git"
+  },
+  "keywords": [
+    "fe-exercise"
+  ],
+  "author": "Prilivia Ruli Fatmawati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/priliviarf/ss-training/issues"
+  },
+  "homepage": "https://gitlab.com/priliviarf/ss-training#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}

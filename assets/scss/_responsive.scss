@@ -1,0 +1,135 @@
+/* Larger that laptop */
+@media (max-width: 1200px) {
+  #attributes {
+    .row {
+      .d-flex {
+        flex-direction: column;
+        justify-content: center;
+      }
+      section {
+        margin: 2em 0;
+        text-align: center;
+      }
+    }
+  }
+  #partner {
+    .d-flex {
+      div {
+        padding: 2em;
+      }
+    }
+  }
+}
+/* This is basically a decent laptop, up to an average external display */
+@media (max-width: 992px) {
+}
+/* Up to a tablet (includes iPads in landscape) */
+@media (max-width: 768px) {
+  #hero {
+    .subtitle-first-section{
+      h1 {
+        font-size: 3.5em;
+      }
+    }
+  }
+  #services,#attributes,#team,#reviews,#message,footer {
+    padding: 6em 4em 4em;
+  }
+  #about {
+    &>section {
+      flex-direction: column;
+    }
+  }
+  #gallery {
+    .d-grid {
+      .d-grid-item {
+        width: 50%;
+      }
+    }
+  }
+  #partner {
+    .d-flex {
+      div {
+        padding: 1.5em;
+      }
+    }
+  }
+}
+ /* Smaller than an iPad portrait (so all phones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  #hero {
+    .navbar {
+      padding: 1.3em 2em;
+      &.fixed-top {
+        padding: .8em 2em;
+      }
+    }
+    .subtitle-first-section{
+      h1 {
+        font-size: 2em;
+      }
+    }
+  }
+  #about {
+    padding: 2em 3em;
+  }
+  #services,#attributes,#team,#reviews,#message,footer {
+    padding: 6em 2em 2em;
+  }
+  #gallery {
+    ul {
+      &.list-inline {
+        margin: 1em 0;
+        .list-inline-item {
+          display: block;
+        }
+      }
+    }
+    .d-grid {
+      .d-grid-item {
+        width: 100%;
+      }
+    }
+  }
+  #team {
+    .row {
+      h5 {
+        margin-top: 1em;
+      }
+    }
+    .col-md-4 {
+      margin-bottom: 2em;
+    }
+  }
+  #contact {
+    h1 {
+      font-size: 2em;
+    }
+  }
+  #message {
+    .form {
+      padding: 2.5em 1em 0em;
+    }
+    input,textarea {
+      font-size: 1em;
+    }
+  }
+  #partner {
+    height: auto;
+    .d-flex {
+      flex-direction: column;
+      div {
+        padding: 1.5em;
+      }
+    }
+  }
+  footer section>div h5 {
+    margin-bottom: 2em;
+  }
+  footer .social-media a {
+    margin: 0;
+  }
+}

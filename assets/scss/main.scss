@@ -1,0 +1,55 @@
+/*
+
+  Style for fe-exercise | SoftwareSeni Training
+  Made by Prilivia Ruli Fatmawati
+  Yogyakarta Sep 18, 2018
+*/
+
+// variable
+$black: #000;
+$flat-black: #101113;
+$gray: #868686;
+$light-gray: #f8f8f8;
+$red:  #f44336;
+$template-color: #93c01f;
+$template-color-dark: #77a500;
+$template-color-light: #abe021;
+$white: #fff;
+
+// mixin'
+@mixin radius($rad){
+	border-radius: $rad ;
+	-webkit-border-radius: $rad ;
+	-moz-border-radius: $rad ;
+	-o-border-radius: $rad ;
+}
+@mixin flexbox() {
+ display: -webkit-box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+}
+@mixin transition($duration) {
+  transition: all $duration*1s ease;
+  -moz-transition: all $duration*1s ease;
+  -ms-transition: all $duration*1s ease;
+  -o-transition: all $duration*1s ease;
+  -webkit-transition: all $duration*1s ease;
+}
+@mixin bg-img-center-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin bg-img-center-contain {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@import '_reset';
+@import '_layout';
+@import '_theme';
+@import '_font';
+@import '_responsive';

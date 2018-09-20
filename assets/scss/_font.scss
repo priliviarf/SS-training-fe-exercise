@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+  font-family: 'Arca Majora Heavy';
+  src: url('../fonts/ArcaMajora3-Heavy.woff2') format('woff2'),
+       url('../fonts/ArcaMajora3-Heavy.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Arca Majora Bold';
+  src: url('../fonts/ArcaMajora3-Bold.woff2') format('woff2'),
+       url('../fonts/ArcaMajora3-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.am-b {
+  font-family: 'Arca Majora Bold', sans-serif;
+}
+.am-h {
+  font-family: 'Arca Majora Heavy', sans-serif;
+}
+
+// ---------------------- font color -------------------------
+.tem {
+  color: $template-color;
+}
